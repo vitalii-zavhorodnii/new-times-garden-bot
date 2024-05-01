@@ -7,7 +7,7 @@ export async function handleStartBotCommand(msg: TelegramBot.Message) {
 
   const link = process.env.FRONTEND_LINK;
 
-  telegramBot.sendMessage(chatId, 'play game', {
+  telegramBot.sendMessage(chatId, 'Start your garden!', {
     reply_markup: {
       inline_keyboard: [
         [
@@ -26,7 +26,7 @@ export async function handlePlayGameCommand(msg: TelegramBot.Message) {
 
   const link = process.env.FRONTEND_LINK;
 
-  telegramBot.sendMessage(chatId, 'play game', {
+  telegramBot.sendMessage(chatId, 'Play New Times Garden', {
     reply_markup: {
       inline_keyboard: [
         [
