@@ -1,4 +1,3 @@
-
 name: Deploy on development VPS
 
 on:
@@ -47,7 +46,7 @@ jobs:
 
       # - name: Create build API
       #   run: npm run build:api
-        
+
       # - name: Create build Client
       #   run: npm run build:client
 
@@ -70,4 +69,4 @@ jobs:
             npm install
             npm run build
             npm run start
-            pm2 restart bot
+            
