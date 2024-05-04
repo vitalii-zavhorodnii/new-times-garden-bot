@@ -17,7 +17,7 @@ const gameDescription =
 export async function handleStartBotCommand(msg: TelegramBot.Message) {
   const chatId = msg.chat.id;
 
-  telegramBot.sendPhoto(chatId, communityImg, {
+  telegramBot.sendPhoto(chatId, gameImg, {
     caption: gameDescription,
     parse_mode: 'Markdown',
     reply_markup: {
