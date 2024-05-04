@@ -1,7 +1,6 @@
 import 'dotenv/config';
 
 import {
-  handleInfoCommand,
   handlePlayGameCommand,
   handlePublicCommand,
   handleStartBotCommand
@@ -11,7 +10,6 @@ import { telegramBot } from './bot/bot.telegram';
 telegramBot.onText(/\/start/, handleStartBotCommand);
 telegramBot.onText(/\/play/, handlePlayGameCommand);
 telegramBot.onText(/\/public/, handlePublicCommand);
-telegramBot.onText(/\/info/, handleInfoCommand);
 
 (async () => {
   const commands = await telegramBot.getMyCommands();
