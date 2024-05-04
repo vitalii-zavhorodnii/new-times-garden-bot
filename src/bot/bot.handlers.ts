@@ -26,7 +26,9 @@ export async function handleStartBotCommand(msg: TelegramBot.Message) {
           {
             text: gameBtn,
             web_app: { url: gameLink }
-          },
+          }
+        ],
+        [
           {
             text: communityBtn,
             url: communityLink
